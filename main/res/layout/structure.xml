@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectStructure>
+<root path="/home/project">
+    <directory name="src">
+        <directory name="components">
+            <directory name="ui">
+                <file name="card.tsx" type="component">
+                    <exports>
+                        <export>Card</export>
+                        <export>CardHeader</export>
+                        <export>CardFooter</export>
+                        <export>CardTitle</export>
+                        <export>CardDescription</export>
+                        <export>CardContent</export>
+                    </exports>
+                </file>
+            </directory>
+        </directory>
+
+        <directory name="lib">
+            <file name="utils.ts" type="utility">
+                <exports>
+                    <export>cn</export>
+                </exports>
+                <dependencies>
+                    <dependency>clsx</dependency>
+                    <dependency>tailwind-merge</dependency>
+                </dependencies>
+            </file>
+        </directory>
+
+        <directory name="screens">
+            <directory name="Frame">
+                <file name="Frame.tsx" type="screen">
+                    <exports>
+                        <export>Frame</export>
+                    </exports>
+                    <dependencies>
+                        <dependency>react</dependency>
+                        <dependency>../../components/ui/card</dependency>
+                    </dependencies>
+                </file>
+                <file name="index.ts" type="barrel">
+                    <exports>
+                        <export>Frame</export>
+                    </exports>
+                </file>
+            </directory>
+        </directory>
+
+        <file name="index.tsx" type="entry">
+            <description>Application entry point</description>
+            <dependencies>
+                <dependency>react</dependency>
+                <dependency>react-dom/client</dependency>
+                <dependency>./screens/Frame</dependency>
+            </dependencies>
+        </file>
+    </directory>
+
+    <directory name="data">
+        <file name="dashboard.xml" type="data">
+            <description>Dashboard configuration and layout data</description>
+        </file>
+        <file name="config.xml" type="configuration">
+            <description>Project configuration and dependencies</description>
+        </file>
+        <file name="components.xml" type="documentation">
+            <description>Component specifications and API documentation</description>
+        </file>
+        <file name="assets.xml" type="assets">
+            <description>Asset registry including images, fonts, and colors</description>
+        </file>
+        <file name="structure.xml" type="metadata">
+            <description>Project file structure documentation</description>
+        </file>
+    </directory>
+
+    <file name="index.html" type="html">
+        <description>Main HTML entry point</description>
+    </file>
+
+    <file name="package.json" type="configuration">
+        <description>NPM package configuration</description>
+    </file>
+
+    <file name="tailwind.config.js" type="configuration">
+        <description>Tailwind CSS configuration</description>
+    </file>
+
+    <file name="tailwind.css" type="stylesheet">
+        <description>Global styles and Tailwind directives</description>
+    </file>
+
+    <file name="vite.config.ts" type="configuration">
+        <description>Vite build tool configuration</description>
+    </file>
+
+    <file name="tsconfig.json" type="configuration">
+        <description>TypeScript configuration root</description>
+    </file>
+
+    <file name="tsconfig.app.json" type="configuration">
+        <description>TypeScript configuration for application code</description>
+    </file>
+
+    <file name="tsconfig.node.json" type="configuration">
+        <description>TypeScript configuration for Node.js code</description>
+    </file>
+
+    <file name=".gitignore" type="configuration">
+        <description>Git ignore patterns</description>
+    </file>
+
+    <file name="README.md" type="documentation">
+        <description>Project documentation and setup instructions</description>
+    </file>
+
+    <file name=".screen-graph.json" type="metadata">
+        <description>Anima screen graph metadata</description>
+    </file>
+</root>
+</projectStructure>

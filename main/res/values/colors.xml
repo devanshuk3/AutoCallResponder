@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern & Cool Palette -->
+    <color name="window_background">#F4F7FA</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_on_accent">#FFFFFF</color>
+
+    <!-- Vibrant Accent Colors (Lively Minimalist) -->
+    <color name="busy_accent">#7C3AED</color>
+    <color name="driving_accent">#0EA5E9</color>
+    <color name="sleeping_accent">#F43F5E</color>
+    <color name="class_mode_accent">#10B981</color>
+    <color name="turnoff_accent">#F59E0B</color>
+    <color name="custom_mode_accent">#3B82F6</color>
+
+    <!-- Card Background Aliases -->
+    <color name="busy">@color/card_background</color>
+    <color name="driving">@color/card_background</color>
+    <color name="sleeping">@color/card_background</color>
+    <color name="class_mode">@color/card_background</color>
+    <color name="turnoff">@color/card_background</color>
+    <color name="custom_mode">@color/card_background</color>
+
+    <!-- UI Elements -->
+    <color name="fab_background">#0F172A</color>
+    <color name="dialog_surface">#FFFFFF</color>
+    <color name="dialog_hint">#94A3B8</color>
+    <color name="input_background">#F8FAFC</color>
+    <color name="stroke_selected">#0F172A</color>
+    <color name="stroke_unselected">#F1F5F9</color> <!-- Almost invisible stroke -->
+
+    <!-- System -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

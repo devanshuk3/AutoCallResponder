@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components>
+    <component name="Card">
+        <description>Base card component with rounded corners, border, and shadow</description>
+        <props>
+            <prop name="className" type="string" optional="true" />
+            <prop name="children" type="ReactNode" />
+        </props>
+        <defaultStyles>
+            <style>rounded-xl</style>
+            <style>border</style>
+            <style>bg-card</style>
+            <style>text-card-foreground</style>
+            <style>shadow</style>
+        </defaultStyles>
+        <forwardRef>true</forwardRef>
+    </component>
+
+    <component name="CardHeader">
+        <description>Card header section with vertical spacing</description>
+        <props>
+            <prop name="className" type="string" optional="true" />
+            <prop name="children" type="ReactNode" />
+        </props>
+        <defaultStyles>
+            <style>flex</style>
+            <style>flex-col</style>
+            <style>space-y-1.5</style>
+            <style>p-6</style>
+        </defaultStyles>
+        <forwardRef>true</forwardRef>
+    </component>
+
+    <component name="CardTitle">
+        <description>Card title with semibold font weight</description>
+        <props>
+            <prop name="className" type="string" optional="true" />
+            <prop name="children" type="ReactNode" />
+        </props>
+        <defaultStyles>
+            <style>font-semibold</style>
+            <style>leading-none</style>
+            <style>tracking-tight</style>
+        </defaultStyles>
+        <forwardRef>true</forwardRef>
+    </component>
+
+    <component name="CardDescription">
+        <description>Card description with muted text color</description>
+        <props>
+            <prop name="className" type="string" optional="true" />
+            <prop name="children" type="ReactNode" />
+        </props>
+        <defaultStyles>
+            <style>text-sm</style>
+            <style>text-muted-foreground</style>
+        </defaultStyles>
+        <forwardRef>true</forwardRef>
+    </component>
+
+    <component name="CardContent">
+        <description>Main content area of the card</description>
+        <props>
+            <prop name="className" type="string" optional="true" />
+            <prop name="children" type="ReactNode" />
+        </props>
+        <defaultStyles>
+            <style>p-6</style>
+            <style>pt-0</style>
+        </defaultStyles>
+        <forwardRef>true</forwardRef>
+    </component>
+
+    <component name="CardFooter">
+        <description>Card footer section with flex layout</description>
+        <props>
+            <prop name="className" type="string" optional="true" />
+            <prop name="children" type="ReactNode" />
+        </props>
+        <defaultStyles>
+            <style>flex</style>
+            <style>items-center</style>
+            <style>p-6</style>
+            <style>pt-0</style>
+        </defaultStyles>
+        <forwardRef>true</forwardRef>
+    </component>
+
+    <component name="Frame">
+        <description>Main dashboard component with status selection functionality</description>
+        <state>
+            <variable name="activeStatus" type="string | null" initial="null" />
+        </state>
+        <methods>
+            <method name="handleStatusClick">
+                <parameter name="label" type="string" />
+                <description>Handles status button clicks and updates active state</description>
+            </method>
+        </methods>
+        <children>
+            <element type="main" role="container" />
+            <element type="Card" role="header" />
+            <element type="Card" role="status-button" count="4" />
+            <element type="notification" role="feedback" conditional="true" />
+        </children>
+    </component>
+
+    <utilities>
+        <function name="cn">
+            <description>Utility function to merge Tailwind CSS classes using clsx and tailwind-merge</description>
+            <parameters>
+                <parameter name="inputs" type="ClassValue[]" spread="true" />
+            </parameters>
+            <returns type="string" />
+            <implementation>
+                <library>clsx</library>
+                <library>tailwind-merge</library>
+            </implementation>
+        </function>
+    </utilities>
+</components>

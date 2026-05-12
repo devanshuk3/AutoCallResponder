@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assets>
+    <images>
+        <image id="busy-icon">
+            <url>https://c.animaapp.com/mlgf2kyugq3Qw0/img/rectangle-6.svg</url>
+            <alt>BUSY toggle</alt>
+            <dimensions width="112px" height="112px" />
+            <format>SVG</format>
+            <usage>Status button icon for BUSY state</usage>
+        </image>
+
+        <image id="driving-icon">
+            <url>https://c.animaapp.com/mlgf2kyugq3Qw0/img/rectangle-7.svg</url>
+            <alt>DRIVING toggle</alt>
+            <dimensions width="112px" height="112px" />
+            <format>SVG</format>
+            <usage>Status button icon for DRIVING state</usage>
+        </image>
+
+        <image id="sleeping-icon">
+            <url>https://c.animaapp.com/mlgf2kyugq3Qw0/img/rectangle-8.svg</url>
+            <alt>SLEEPING toggle</alt>
+            <dimensions width="112px" height="112px" />
+            <format>SVG</format>
+            <usage>Status button icon for SLEEPING state</usage>
+        </image>
+
+        <image id="turnoff-icon">
+            <url>https://c.animaapp.com/mlgf2kyugq3Qw0/img/rectangle-9.svg</url>
+            <alt>TURN OFF toggle</alt>
+            <dimensions width="112px" height="112px" />
+            <format>SVG</format>
+            <usage>Status button icon for TURN OFF state</usage>
+        </image>
+    </images>
+
+    <fonts>
+        <font id="gurajada">
+            <family>Gurajada</family>
+            <weights>
+                <weight value="400" style="normal" />
+            </weights>
+            <source>Google Fonts</source>
+            <url>https://fonts.googleapis.com/css?family=Gurajada:400</url>
+            <fallback>Helvetica, sans-serif</fallback>
+        </font>
+    </fonts>
+
+    <colors>
+        <palette name="status-colors">
+            <color name="busy" value="purple-500" hex="#a855f7" />
+            <color name="busy-hover" value="purple-600" hex="#9333ea" />
+            <color name="driving" value="cyan-400" hex="#22d3ee" />
+            <color name="driving-hover" value="cyan-500" hex="#06b6d4" />
+            <color name="sleeping" value="pink-500" hex="#ec4899" />
+            <color name="sleeping-hover" value="pink-600" hex="#db2777" />
+            <color name="turnoff" value="orange-400" hex="#fb923c" />
+            <color name="turnoff-hover" value="orange-500" hex="#f97316" />
+        </palette>
+
+        <palette name="base-colors">
+            <color name="white" value="white" hex="#ffffff" />
+            <color name="black" value="black" hex="#000000" />
+        </palette>
+    </colors>
+
+    <icons>
+        <icon name="hamburger-menu" usage="Mobile navigation toggle" />
+        <icon name="close" usage="Close mobile menu" />
+    </icons>
+</assets>
